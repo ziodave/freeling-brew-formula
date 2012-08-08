@@ -1,5 +1,7 @@
 require 'formula'
 
+# thanks to ambs for the seed of this formula, https://github.com/ambs
+
 class Freeling < Formula
   head 'http://devel.cpl.upc.edu/freeling/svn/trunk', :using => :svn
   homepage 'http://nlp.lsi.upc.edu/freeling/'
