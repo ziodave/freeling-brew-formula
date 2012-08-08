@@ -39,7 +39,7 @@ class Freeling < Formula
     system "glibtoolize --force"
     system "autoconf"
     system "automake -a"
-    # system "autoreconf --force --install"
+    system "autoreconf --force --install"
 
     system "env LDFLAGS='-L/usr/local/Cellar/libtool/2.4.2/lib -L/usr/local/Cellar/icu4c/4.8.1.1/lib -L/opt/local/lib' CPPFLAGS='-I/usr/local/Cellar/libtool/2.4.2/include -I/opt/local/include -I/usr/local/Cellar/boost/1.49.0/include -I/usr/local/Cellar/icu4c/4.8.1.1/include' ./configure --prefix=#{prefix}"
     system "make"
