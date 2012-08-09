@@ -13,7 +13,8 @@ class Freeling < Formula
   # requires boost --with-icu.
   # At the moment I think that we can not force build options
   depends_on 'boost'
-  depends_on 'libtool' => :build
+  # depends_on 'libtool' => :build
+  depends_on 'libtool' if MacOS::Xcode.version >= "4.3"
 
   def options
     [
