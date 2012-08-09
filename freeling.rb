@@ -56,6 +56,7 @@ class Freeling < Formula
   # end
 
   def test
+    # echo 'Hello world' | analyze -f /usr/local/Cellar/freeling/HEAD/share/freeling/config/en.cfg | grep -c 'world world NN 1'
     system "echo 'Hello world' | #{bin}/analyze -f #{share}/freeling/config/en.cfg | grep -c 'world world NN 1'"
   end
 end
